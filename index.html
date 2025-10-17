@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Кот Маус — визитка</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <article class="card">
+      <div class="avatar">
+        <img src="https://i.pinimg.com/736x/95/a5/b6/95a5b6f27cc2dc27c6969e9f2143515a.jpg" alt="Кот Маус — серо-белый, 5 лет">
+      </div>
+
+      <div class="info">
+        <h1>Маус</h1>
+
+        <div class="meta">
+          <span class="chip">красавец</span>
+          <span class="chip">плейбой</span>
+          <span class="chip">хороший мальчик</span>
+        </div>
+
+        <section class="facts">
+          <div class="fact"><b>Имя</b>Маус</div>
+          <div class="fact"><b>Возраст</b>5 лет</div>
+          <div class="fact"><b>Окрас</b>серо-белый</div>
+          <div class="fact"><b>Особенность</b>чёрный носик</div>
+        </section>
+
+        <section class="likes">
+          <h2>Любит:</h2>
+          <ul>
+            <li>😴 спать</li>
+            <li>🍽️ кушать</li>
+            <li>🧶 играть</li>
+            <li>😺 мурлыкать</li>
+            <li>😼 кусаться</li>
+            <li>🛌 и ещё раз спать</li>
+          </ul>
+        </section>
+
+        <button class="pet-btn">🤍 Погладить Мауса</button>
+        <div class="purr" id="purr">💖 мррр~</div>
+      </div>
+    </article>
+  </div>
+  
+  <script>
+    const btn = document.querySelector('.pet-btn');
+    const purr = document.getElementById('purr');
+
+    btn.addEventListener('click', () => {
+      purr.classList.add('show');
+      setTimeout(() => purr.classList.remove('show'), 1500);
+    });
+  </script>
+</body>
+</html>
